@@ -1,0 +1,32 @@
+img.resize{
+  width: 52%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  font-family: serif;
+  color: #007DC3;
+}
+
+
+h5 {
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+p {
+  color: #002D62;
+  font-size: 25px;
+  font-family: serif;
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: green;
+}
