@@ -1,71 +1,72 @@
- .bodycolor{
-    background-color: orange;
-  }
+:root {
+  /* OKC Colors */
+  --orange: hsl(9, 86%, 57%);
+  --yellow: hsl(41, 98%, 59%);
+  --darkblue: hsl(212, 100%, 19%);
+  --lightblue: hsl(202, 100%, 38%);
   
-   .coral-background {
-    background-color: coral;
-     box-shadow: 10px 0 10px rgba(0, 0, 0, .8),
-             -10px 0 10px rgba(0, 0, 0, .8);
-     }
-  
-
-  .white-background {
-    background-color: white;
-     box-shadow: 10px 0 10px rgba(0, 0, 0, .8),
-             -10px 0 10px rgba(0, 0, 0, .8);
-  }
-  
-  .corners {
-    border-radius: 25px;
-    width: 1140px;
-    height: auto;
-    margin-bottom:10px;
-  }
-  
-  .corner2 {
-    border-radius: 10px;
-    width: 1140px;
-    height: auto;
-    padding:10px;
-  }
-
-  .p1 {
-  margin-top: px;
-  color: #002D62;
-  font-size: 25px;
-  font-family: serif;
-  }
-
-img.resize{
-  border-radius:50px;
-  width: 45%;
+  /* Fonts */
+  --titleFont: 'Cantata One';
+  --sloganFont: 'Imprima';
+  --bodyFont: 'Roboto';
 }
 
-.h1color {
-  text-align: center;
-  font-size: 75px;
-  font-family: serif;
-  color: #007DC3;
+* {
+  box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0px 100px 0px 100px;
+   background-color: var(--orange);
+}
 
-.h2color {
+.headerimage {
+  height: 300px;
+  background: url('http://posterizes.com/wp-content/uploads/KevinDurantBeastSource24Posterizes_1366x7681.jpg');
+  background-size: cover;
+}
+
+.container {
+  background-color: white;
+  margin-bottom: 0px;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, .2),
+             -10px 0 10px rgba(0, 0, 0, .2);
+}
+
+.title {
   text-align: center;
-  color: #000;
-  font-size: 20px;
-  font-family: sans-serif;
+  font-size: 4em;
+  margin: 0px;
+  font-family: var(--titleFont), serif;
+  color: var(--lightblue);
+}
+
+.slogan {
+  text-align: center;
+  color: var(--darkblue);
+  margin: 0px;
+  font-size: 1.5em;
+  font-family: var(--sloganFont), sans-serif;
 }
 
 p {
-  color: #002D62;
-  font-size: 25px;
-  font-family: serif;
+  color: var(--darkblue);
+  font-family: var(--bodyFont), sans-serif;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  margin: 20px;
 }
 
 a {
-  color: red;
+  color: var(--orange);
+  font-size: 1.1em;
 }
 
 a:hover {
-  color: green;
+  color: var(--yellow);
+}
+
+footer {
+  text-align: center;
 }
